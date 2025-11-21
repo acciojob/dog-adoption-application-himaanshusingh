@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>DOG ADOPTION FORM</legend>
+        <div class="name-div">
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Name" name="Name" />
+        </div>
+        <div class="phone-div">
+          <label for="phone">Phone: </label>
+          <input type="text" id="phone" placeholder="Phone Number" name="Phone" />
+        </div>
+        <div class="address-div">
+          <label for="address">Address: </label>
+          <input type="text" id="address" placeholder="Address" name="address" />
+        </div>
+        <div class="checkbox-div">
+          <label for="checkbox">Have you ever lived with a Dog before?</label>
+          <input type="checkbox" name="checkbox" id="checkbox" value="Have you ever lived with a Dog before?" />
+        </div>
+        <div class="select-div">
+          <label for="multiSelect">Please select your preferred breeds</label>
+          <select name="breed" id="multiSelect">
+            <option value="default" selected disabled>Select any one</option>
+            <option value="Labrador">Labrador</option>
+            <option value="Pitbull">Pitbull</option>
+            <option value="Rotweiller">Rotweiller</option>
+          </select>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
 </html>
